@@ -1,0 +1,40 @@
+/* Header styles */
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding inside the header */
+    display: flex; /* Flex container to align items */
+    justify-content: space-between; /* Align items horizontally with space between */
+    align-items: center; /* Center items vertically */
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Navigation styles */
+  .nav {
+    display: flex; /* Flex container for navigation items */
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  /* Navigation link styles */
+  .nav li {
+    margin-right: 10px; /* Add space between navigation items */
+  }
+  
+  /* Navigation link text styles */
+  .nav li a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Hover styles for navigation links */
+  .nav li a:hover {
+    text-decoration: underline; /* Underline text on hover */
+  }
+  
