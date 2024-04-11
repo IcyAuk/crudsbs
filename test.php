@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Header</title>
-  <link rel="stylesheet" href="/css/teststyle.css">
+  <link rel="stylesheet" href="css/teststyle.css">
+  <title>Document</title>
 </head>
+
 <body>
   <header>
-    <div class="logo">Your Logo</div>
+    <img src="assets/logoipsum-317.svg" alt="logo">
     <nav>
-      <ul class="nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Comments</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Logout</a></li>
+      <ul class="nav__links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
-  </header>
+    <a class="cta" href=""><button>Contact</button></a>
+  </header>  
 </body>
+
 </html>

@@ -1,48 +1,38 @@
-/* Header styles */
-.header__container {
-        background-color: #333; /* Dark background color */
-        color: #fff; /* Text color */
-        padding: 10px 20px; /* Padding inside the header */
-        display: flex; /* Flex container to align items */
-        justify-content: space-between; /* Align items horizontally with space between */
-        align-items: center; /* Center items vertically */
-      }
-      
-      /* Logo styles */
-      .header__logo img {
-        max-width: 100%; /* Ensure the logo image doesn't exceed its container */
-      }
-      
-      /* Navigation styles */
-      .header__navbar {
-        display: flex; /* Flex container for navigation items */
-        align-items: center; /* Center items vertically */
-      }
-      
-      /* Navigation link styles */
-      .nav__wrapper {
-        margin-right: 10px; /* Add space between navigation items and login/logout buttons */
-      }
-      
-      .nav__list {
-        list-style-type: none; /* Remove bullet points from the list */
-        margin: 0; /* Remove default margin */
-        padding: 0; /* Remove default padding */
-      }
-      
-      /* Navigation link text styles */
-      .nav__list li {
-        display: inline; /* Display list items inline */
-        margin-right: 10px; /* Add space between navigation items */
-      }
-      
-      /* Hover styles for navigation links */
-      .nav__list li a:hover {
-        text-decoration: underline; /* Underline text on hover */
-      }
-      
-      /* Login/Logout button styles */
-      .nav__connection .header__button {
-        margin-left: 10px; /* Add space between login/logout buttons */
-      }
-      
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  border-bottom: solid black 1px;
+}
+
+.logo{
+
+}
+
+.header__navbar{
+  display: flex;
+}
+
+.header__navbar ul{
+  display: flex;
+}
+
+.header__navbar li{
+  display: flex;
+  background-color: tomato;
+  border: solid black 1px;
+}
+
+.header__navbar li a{
+  display: block;
+}
+
+.connection__container{
+  display: flex;
+}
+
+.connection__button{
+  background-color: lightcoral;
+  border: solid black 1px;
+}
+
