@@ -13,3 +13,7 @@ try {
 function createUser(int $type, string $username, string $password){
 
 }
+
+function createAdmin($username, $email, $password) {
+
+}

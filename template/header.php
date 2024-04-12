@@ -22,7 +22,7 @@ $navbar = [
 <body>
     <header class="header__container">
         
-        <a href="#"><img class="logo" src="./assets/logoipsum-317.svg" alt=""></a>
+        <a href="index.php"><img class="logo" src="./assets/logoipsum-317.svg" alt=""></a>
 
         <nav class="header__navbar">
             <ul>
@@ -33,8 +33,8 @@ $navbar = [
         </nav>
 
         <div class="connection__container">
-            <a href="" class="connection__button">Log In</a>
-            <a href="" class="connection__button">Log Out</a>
+            <a href="login.php" class="connection__button">Log In</a>
+            <a href="logout.php" class="connection__button">Log Out</a>
         </div>
     </header>
     <main>
