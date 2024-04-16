@@ -8,20 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    //
-    $hashPassword = password_hash($password, PASSWORD_BCRYPT);
-
-    //insert into crudsbs database
-    $stmt = $pdo->prepare(
-                            "INSERT INTO users (username, email, password, is_admin)
-                                VALUES (:username, :email, :password, TRUE)"
-                        );
-    //bindParam : values can be bound after
-    //bindValue : bind values defined beforehand only
-    $stmt->bindParam(':username',$username);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':password', $hashPassword);
-    $stmt->execute();
+    createAdmin($pdo, $username, $email, $password);
 }
 ?>
 

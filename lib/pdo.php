@@ -10,10 +10,25 @@ try {
     die($e->getMessage());
 }
 
-function createUser(int $type, string $username, string $password){
 
+//function can be tweaked to change for user, vet, mod or admin.
+//I hard-coded it to create admin.
+function createAdmin($pdo, $username, $email, $password) {
+    $hashPassword = password_hash($password, PASSWORD_BCRYPT);
+
+    //insert into crudsbs database
+    $query = $pdo->prepare(
+                            "INSERT INTO users (username, email, password, is_admin)
+                                VALUES (:username, :email, :password, TRUE)"
+                        );
+    //bindParam : values can be bound after
+    //bindValue : bind values defined beforehand only
+    $query->bindParam(':username',$username);
+    $query->bindParam(':email', $email);
+    $query->bindParam(':password', $hashPassword);
+    $query->execute();
 }
 
-function createAdmin($username, $email, $password) {
-
+function logIn($pdo, $username, $email, $password){
+    
 }

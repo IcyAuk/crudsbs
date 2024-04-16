@@ -1,6 +1,7 @@
 <?php
 require "lib/config.php";
 require "lib/pdo.php";
+session_start();
 //echo "header.php loaded<br>";
 
 $navbar = [
@@ -26,15 +27,23 @@ $navbar = [
 
         <nav class="header__navbar">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">Comments</a></li>
-                <li><a href="#">Articles</a></li>   
+                <li><a href="articles.php">Articles</a></li>   
             </ul>
         </nav>
 
         <div class="connection__container">
-            <a href="login.php" class="connection__button">Log In</a>
-            <a href="logout.php" class="connection__button">Log Out</a>
+            <?php
+                if(!isset($_SESSION['user_id'])){?>
+
+                    <a href="login.php" class="connection__button">Log In</a>
+
+                <?php }else{?>
+                    <a href="logout.php" class="connection__button">Log Out</a>
+                    <a href="dashboard.php" class="connection__button">Dashboard</a>
+                <?php }?>
+
         </div>
     </header>
     <main>

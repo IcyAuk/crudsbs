@@ -30,7 +30,7 @@ CREATE TABLE comments(
 );
 
 CREATE TABLE articles(
-    article_id INT UNSIGNED PRIMARY KEY,
+    article_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     user_id INT UNSIGNED,
     title VARCHAR(100) NOT NULL,
     description TEXT,
